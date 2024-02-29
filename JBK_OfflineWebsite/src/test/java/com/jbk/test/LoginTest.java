@@ -1,44 +1,29 @@
 package com.jbk.test;
 
-import static org.testng.Assert.assertEquals;
-
-import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
+import com.jbk.pageobjects.LoginPage;
 import junit.framework.Assert;
 
-public class LoginTest 
+public class LoginTest extends BaseClass
 {
-	WebDriver driver ;
-	@BeforeTest
-	public void loginpage() throws Exception
-	{
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
-	} 
+	LoginPage lp ;
 	
 	@Test
-	public void testCase1() throws Exception
+	public void loginTC1() throws Exception
 	{
-		driver.get("file:///C:/Users/admin/Desktop/Software%20Testing/Automation%20Testing/selenium%20jar/Selenium%20Software%20all/Selenium%20Softwares/Offline%20Website/index.html");
-		System.out.println("testCase1");
-		
-		driver.findElement(By.id("email")).sendKeys("kiran@gmail.com");
-		driver.findElement(By.id("password")).sendKeys("123456");
-		driver.findElement(By.xpath("//button")).click();
+		driver.get(BaseUrl);
+		log.info("loginTC1");
+	
+		lp =new LoginPage(driver);
+		lp.setEmail("kiran@gmail.com");
+		lp.setPassword("123456");
+		lp.clickOnSignUpBtn();
 		
 		String act_title = driver.getTitle();
-		System.out.println("Title : "+act_title);
 		String exp_title = "JavaByKiran | Dashboard"; 	
+		log.info("Atual Title : "+act_title +" "+"Expected Title : "+exp_title);
 		Assert.assertEquals(act_title, exp_title);
-	
 	}
 	
 	@AfterMethod

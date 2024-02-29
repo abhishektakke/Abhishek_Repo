@@ -1,0 +1,6 @@
+2024-02-29 22:56:27,405  INFO [main] BaseClass:47 - Open Chrome Driver
+2024-02-29 22:56:39,717  INFO [main] BaseClass:19 - loginTC1
+2024-02-29 22:56:41,506  INFO [main] BaseClass:66 - Quit Driver
+2024-02-29 23:00:07,191  INFO [main] BaseClass:47 - Open Chrome Driver
+2024-02-29 23:00:16,895  INFO [main] BaseClass:19 - loginTC1
+2024-02-29 23:00:18,740  INFO [main] BaseClass:66 - Quit Driver
