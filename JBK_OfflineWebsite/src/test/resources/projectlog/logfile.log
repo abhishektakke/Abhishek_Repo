@@ -4,3 +4,15 @@
 2024-02-29 23:00:07,191  INFO [main] BaseClass:47 - Open Chrome Driver
 2024-02-29 23:00:16,895  INFO [main] BaseClass:19 - loginTC1
 2024-02-29 23:00:18,740  INFO [main] BaseClass:66 - Quit Driver
+2024-02-29 23:15:08,345  INFO [main] BaseClass:47 - Open Chrome Driver
+2024-02-29 23:15:16,092  INFO [main] BaseClass:16 - loginTC1
+2024-02-29 23:15:18,184  INFO [main] BaseClass:25 - Atual Title : JavaByKiran | Dashboard Expected Title : JavaByKiran | Dashboard
+2024-02-29 23:15:18,529  INFO [main] BaseClass:66 - Quit Driver
+2024-02-29 23:39:20,107  INFO [main] BaseClass:47 - Open Chrome Driver
+2024-02-29 23:39:30,727  INFO [main] BaseClass:16 - loginTC1
+2024-02-29 23:39:31,928  INFO [main] BaseClass:25 - Atual Title : JavaByKiran | Dashboard Expected Title : JavaByKiran | Dashboard
+2024-02-29 23:39:32,240  INFO [main] BaseClass:66 - Quit Driver
+2024-02-29 23:40:13,245  INFO [main] BaseClass:47 - Open Chrome Driver
+2024-02-29 23:40:20,639  INFO [main] BaseClass:16 - loginTC1
+2024-02-29 23:40:22,479  INFO [main] BaseClass:25 - Atual Title : JavaByKiran | Dashboard Expected Title : JavaByKiran | Dashboard
+2024-02-29 23:40:22,978  INFO [main] BaseClass:66 - Quit Driver
