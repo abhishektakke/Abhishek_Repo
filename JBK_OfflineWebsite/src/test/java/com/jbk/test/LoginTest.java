@@ -22,7 +22,7 @@ public class LoginTest extends BaseClass
 		
 		String act_title = driver.getTitle();
 		String exp_title = "JavaByKiran | Dashboard"; 	
-		log.info("Atual Title : "+act_title +" "+"Expected Title : "+exp_title);
+		log.info("loginTC1 : Atual Title : "+act_title +" "+"Expected Title : "+exp_title);
 		Assert.assertEquals(act_title, exp_title);
 	}
 	

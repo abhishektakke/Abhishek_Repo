@@ -48,6 +48,7 @@ public class BaseClass
 			System.setProperty("webdriver.chrome.driver", chromeDriver);
 			driver = new ChromeDriver();
 			driver.manage().timeouts().pageLoadTimeout(15000, TimeUnit.SECONDS);
+			driver.manage().window().maximize();
 		
 		}
 		else if (browser.equals("firefox")) 
@@ -56,16 +57,8 @@ public class BaseClass
 			System.setProperty("webdriver.gecko.driver", firefoxDriver);
 			driver = new FirefoxDriver() ;
 			driver.manage().timeouts().implicitlyWait(5000,TimeUnit.SECONDS);
+			driver.manage().window().maximize();
 		}	
 	}
-	
-	
-	@AfterClass
-	public void quitDriver() 
-	{
-		log.info("Quit Driver");
-		driver.quit();
-	}
-	
 	
 }
