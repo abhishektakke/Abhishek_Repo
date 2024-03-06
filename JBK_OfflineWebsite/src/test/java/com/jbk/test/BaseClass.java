@@ -30,7 +30,7 @@ public class BaseClass
 	
 	@Parameters("Browser")
 	@BeforeMethod
-	public void setUp(String browser)
+	public WebDriver setUp(String browser)
 	{
 		try {
 			Properties properties = new Properties();
@@ -49,7 +49,6 @@ public class BaseClass
 			driver = new ChromeDriver();
 			driver.manage().timeouts().pageLoadTimeout(15000, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
-		
 		}
 		else if (browser.equals("firefox")) 
 		{
@@ -58,7 +57,8 @@ public class BaseClass
 			driver = new FirefoxDriver() ;
 			driver.manage().timeouts().implicitlyWait(5000,TimeUnit.SECONDS);
 			driver.manage().window().maximize();
-		}	
+		}
+		return driver;	
 	}
 	
 }
